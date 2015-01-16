@@ -1068,7 +1068,7 @@
         $items.each(function () {
           if ($(this).parent().is(':not(.disabled)')) {
             if ($.trim($(this).text().toLowerCase()).substring(0, 1) == keyCodeMap[e.keyCode]) {
-              keyIndex.push($(this).parent().index());
+              keyIndex.push($(this).parent().data('originalIndex'));
             }
           }
         });

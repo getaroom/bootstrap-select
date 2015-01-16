@@ -11,5 +11,6 @@
   "boss": true,
   "eqnull": true,
   "browser": true,
-  "jquery": true
+  "jquery": true,
+  "eqeqeq": false
 }

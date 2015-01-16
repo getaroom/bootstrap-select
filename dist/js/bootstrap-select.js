@@ -1,7 +1,7 @@
 /*!
  * Bootstrap-select v1.6.3 (http://silviomoreto.github.io/bootstrap-select)
  *
- * Copyright 2013-2014 bootstrap-select
+ * Copyright 2013-2015 bootstrap-select
  * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
  */
 (function ($) {
@@ -1074,7 +1074,7 @@
         $items.each(function () {
           if ($(this).parent().is(':not(.disabled)')) {
             if ($.trim($(this).text().toLowerCase()).substring(0, 1) == keyCodeMap[e.keyCode]) {
-              keyIndex.push($(this).parent().index());
+              keyIndex.push($(this).parent().data('originalIndex'));
             }
           }
         });

@@ -1,5 +1,5 @@
 /*!
- * Bootstrap-select v1.6.3 (http://silviomoreto.github.io/bootstrap-select)
+ * Bootstrap-select v1.6.5 (http://silviomoreto.github.io/bootstrap-select)
  *
  * Copyright 2013-2015 bootstrap-select
  * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
@@ -12,13 +12,13 @@
       return '{n} elem kiválasztva';
     },
     maxOptionsText: function (numAll, numGroup) {
-      var arr = [];
-      arr[0] = 'Legfeljebb {n} elem választható';
-      arr[1] = 'A csoportban legfeljebb {n} elem választható';
-      return arr;
+      return [
+        'Legfeljebb {n} elem választható',
+        'A csoportban legfeljebb {n} elem választható'
+      ];
     },
     selectAllText: 'Mind',
     deselectAllText: 'Egyik sem',
     multipleSeparator: ', '
   };
-}(jQuery));
+})(jQuery);

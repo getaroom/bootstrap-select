@@ -23,7 +23,8 @@
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
   width: 220px;
 }
-.bootstrap-select .dropdown-toggle:focus {
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select a:focus {
   outline: thin dotted #333333 !important;
   outline: 5px auto #66afe9 !important;
   outline-offset: -2px;
